@@ -7,21 +7,17 @@ The analysis was performed using spreadsheets.
 
 # Repository Structure
 ESG-Industry-Analysis-2022/
-│
-├── data/
-│   ├── raw/                # Original dataset + documentation
-│   └── clean/              # Cleaned dataset + missing-value research
-│
-├── analysis/
-│   ├── methodology.md      # How the analysis was done└── insights_and_recommendations.md
-|   ├── analysis.xlsx       # Summary stats
-│   ├── visuals/            # Charts and exported visuals
-│   └── insights_and_recommendations.md
-
-│
-└── docs/
-    ├── project_outline.md
-    └── next_steps.md
+1. data/
+1.1. raw/                 # Original dataset + documentation
+1.2. clean/              # Cleaned dataset + missing-value research
+2. analysis/
+2.1. methodology.md      # How the analysis was done└── insights_and_recommendations.md
+2.2. analysis.xlsx       # Summary stats
+2.3. visuals/            # Charts and exported visuals
+2.4. insights_and_recommendations.md
+3. docs/
+3.1. project_outline.md
+3.2. next_steps.md
 
 # Data Cleaning
 
@@ -34,40 +30,40 @@ Key cleaning steps included:
 - Keeping only one company with a clear specialization ("Alignment Healthcare LLC")
 - Removing companies with no identifiable or multiple unrelated specializations
 
-## The cleaned dataset is stored in:
+The cleaned dataset is stored in:
 /data/clean_data/clean_data.xlsx
 
-## A detailed narrative of cleaning decisions is stored in:
+A detailed narrative of cleaning decisions is stored in:
 /data/clean_data/cleaning_notes.md
 /data/clean_data/Handling_missing_data.md
 
 # Key Findings
-1. Environmental scores lead across most industries
+## Environmental scores lead across most industries
 
 In 37 out of 46 industries, median Environmental scores exceed Social and Governance medians—often by a significant margin.
 This pattern may reflect higher regulatory pressure and clearer reporting frameworks in environmental domains.
 
-2. Large performance gaps within industries
+## Large performance gaps within industries
 
 Nine industries show ESG score dispersion above 750 points, revealing substantial differences among peer companies.
 
-## Notable examples:
+Notable examples:
 
-Technology: Adobe (621) vs. Microsoft (1533)
-Energy: Chevron (637) vs. ConocoPhillips (1536)
-Utilities: Xcel Energy (629) vs. Edison International (~1500+)
-Hotels & Leisure: Allied Esports (600) vs. Airbnb (1475)
-Beverages: Coca-Cola (601) vs. PepsiCo (1417)
+- Technology: Adobe (621) vs. Microsoft (1533)
+- Energy: Chevron (637) vs. ConocoPhillips (1536)
+- Utilities: Xcel Energy (629) vs. Edison International (~1500+)
+- Hotels & Leisure: Allied Esports (600) vs. Airbnb (1475)
+- Beverages: Coca-Cola (601) vs. PepsiCo (1417)
 
-## Top overall performers include:
+Top overall performers include:
 Microsoft, Edison International, ConocoPhillips, and Airbnb.
 
-3. Uneven ESG coverage across industries
+## Uneven ESG coverage across industries
 
 Some industries—such as Technology, Biotechnology, and Health Care—are highly represented.
 Others (e.g., Tobacco, Marine, Auto Components, Distributors) have very few companies reporting ESG data.
 
-# Visuals
+## Visuals
 
 - Located in /analysis/visuals/.
 
