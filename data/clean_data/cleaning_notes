@@ -1,0 +1,79 @@
+Data Cleaning Notes — ESG Industry Analysis (2022)
+
+## These notes document all steps taken to prepare the dataset for analysis. The goal was to ensure consistent formatting, remove irrelevant information, resolve missing values, and create a clean, industry-ready dataset.
+
+1. Removal of Irrelevant Columns
+
+The raw dataset contained several fields that were not required for analytical purposes, including:
+- Company website URLs
+- Links to company logos
+
+These variables did not contribute to ESG score analysis and were removed to streamline the dataset.
+
+2. Standardizing Industry Names
+
+During inspection, five cases were identified where the same industry label appeared in two formats:
+
+- Using “&”
+- Using “and”
+
+Examples included pairs such as:
+
+Aerospace and Defense vs. Aerospace & Defense
+
+Hotels, Restaurants & Leisure vs. Hotels, Restaurants and Leisure
+
+To maintain consistency, all instances were standardized to one naming convention (using “and”).
+
+3. Review of Metadata and Data Dictionary
+
+The original dataset documentation was reviewed to understand:
+- Variable definitions
+- Expected value types
+- Industry classification logic
+- ESG scoring structure
+
+This ensured cleaning decisions remained aligned with the dataset’s intended structure.
+
+4. Correcting Formatting Inconsistencies
+
+A general formatting review was completed to identify and fix:
+
+- Extra spaces in company names and industries
+- Inconsistent capitalization
+- Occasional numeric fields stored as text
+- Symbol inconsistencies across columns
+
+All such issues were corrected to ensure clean grouping and accurate descriptive statistics.
+
+5. Missing Industry Values
+
+The dataset contained 13 companies without an assigned industry.
+
+Steps taken:
+
+- Each company was manually reviewed through its official website.
+- Specialization, business model, and sector alignment were evaluated.
+- Companies with no clear specialization or multiple unrelated business lines could not be reliably assigned to a single industry.
+
+Outcome:
+
+1 company had a clear specialization and was assigned an industry:
+
+Alignment Healthcare LLC → Health Care
+
+12 companies were removed from the dataset due to:
+
+- Lack of identifiable focus
+- Diversified activities across unrelated industries
+
+This decision prevents inaccurate industry-level comparisons.
+
+6. Final Dataset
+
+After completing all cleaning steps, the final dataset (“clean_data.xlsx”) includes:
+
+- Only companies with validated or corrected industry labels
+- Fully standardized industry categories
+- No irrelevant columns
+- Clean formatting across all variables

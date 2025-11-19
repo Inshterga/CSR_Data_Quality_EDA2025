@@ -1,0 +1,26 @@
+# Methodology — ESG Industry Analysis (2022)
+
+## 1. Data Sources
+- ESG scores for public companies in 2022 (CSV file).  
+- Metadata and data dictionary provided with dataset.
+
+## 2. Data Cleaning
+- Removed irrelevant columns: company website URLs, logo links.  
+- Corrected formatting inconsistencies (extra spaces, capitalization, numeric formats).  
+- Standardized industry names (e.g., "Oil & Gas" vs. "Oil and Gas").  
+- Reviewed metadata and data dictionary for variable definitions and expected values.  
+- Investigated missing industry values for 13 companies; retained only one with clear specialization ("Alignment Healthcare LLC").  
+- Removed companies with no identifiable or multiple unrelated specializations.
+
+## 3. Analytical Approach
+- Calculated **median Environmental, Social, and Governance scores** for each industry.  
+- Determined **total ESG score range** (gap between highest and lowest scoring companies) per industry.  
+- Identified **top and bottom performers** overall and by industry.  
+- Counted the **number of companies reporting ESG scores** per industry to assess data coverage.
+
+## 4. Visualization
+- Generated charts for:
+  - Median E, S, G scores by industry  
+  - Total ESG score range by industry  
+  - Number of reporting companies per industry  
+  - Top and bottom ESG performers
