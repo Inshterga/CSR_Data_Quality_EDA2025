@@ -1,10 +1,13 @@
-# CSR_Data_Quality_EDA2025
-Exploring CSR indicators with a focus on data quality and EDA
+# ESG - Public Companies 2022
+Exploring ESG indicators
 ## Project Structure
 1. Data
  - raw/ #Original unmodified data
- -- data sources, choice of companies
- - clean/ #Cleaned datasets
-2. SQL/ #SQL scripts(schma, checks, cleaning)
-3. EDA/ #Notebooks and analysis files
-4. DOCS/ #Reports,notes, documentation
+ - processed/ #Cleaned datasets
+2. Spreadsheets
+- cleaning
+- handling missing data
+- analysis
+3. Visuals
+4. Schema
+- data dictionary
