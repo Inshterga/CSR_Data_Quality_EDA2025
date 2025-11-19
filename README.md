@@ -6,7 +6,7 @@ The goal is to understand industry-level patterns, evaluate dispersion in ESG pe
 The analysis was performed using spreadsheets.
 
 # Repository Structure
-ESG-Industry-Analysis-2022/
+
 1. data/
 1.1. raw/                 # Original dataset + documentation
 1.2. clean/              # Cleaned dataset + missing-value research
